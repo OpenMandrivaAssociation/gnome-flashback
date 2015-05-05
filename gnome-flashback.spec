@@ -1,8 +1,8 @@
 Name:           gnome-flashback
 Version:        3.16.1
-Release:        1%{?dist}
+Release:        1
 Summary:        Classic GNOME session
-
+Group:		Graphical desktop/GNOME
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
 Source0:        http://download.gnome.org/sources/%{name}/3.16/%{name}-%{version}.tar.xz
@@ -48,11 +48,11 @@ by integrating recent changes of the GNOME libraries.
 
 %build
 %configure
-make %{?_smp_mflags}
+%make
 
 
 %install
-make install DESTDIR=$RPM_BUILD_ROOT
+%makeinstall_std
 
 %find_lang %{name}
 
@@ -80,22 +80,3 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_datadir}/gnome-session/sessions/gnome-flashback-metacity.session
 %{_datadir}/xsessions/gnome-flashback-compiz.desktop
 %{_datadir}/xsessions/gnome-flashback-metacity.desktop
-
-%changelog
-* Thu Apr 30 2015 Mike DePaulo <mikedep333@gmail.com> - 3.16.1-1
-- Upgrade to 3.16.1 (for GNOME 3.16)
-
-* Fri Feb 27 2015 Yaakov Selkowitz <yselkowi@redhat.com> - 3.14.0-4
-- Fix for BGO#738562
-
-* Mon Feb 23 2015 Yaakov Selkowitz <yselkowi@redhat.com> - 3.14.0-3
-- Requires: gnome-screensaver
-
-* Tue Feb 10 2015 Yaakov Selkowitz <yselkowi@redhat.com> - 3.14.0-2
-- Fix deps
-
-* Mon Feb 02 2015 Yaakov Selkowitz <yselkowi@redhat.com> - 3.14.0-1
-- Update for GNOME 3.14.
-
-* Mon Jan 12 2015 Yaakov Selkowitz <yselkowi@redhat.com> - 3.10.0-1
-- Initial release.
