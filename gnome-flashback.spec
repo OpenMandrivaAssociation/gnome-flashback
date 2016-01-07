@@ -1,12 +1,11 @@
 Name:           gnome-flashback
 Version:        3.18.1
-Release:        3
+Release:        1
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
 Source0:        http://download.gnome.org/sources/%{name}/3.16/%{name}-%{version}.tar.xz
-Patch0:         gnome-flashback-wm-prefs-overrides.patch
 
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
@@ -43,7 +42,7 @@ by integrating recent changes of the GNOME libraries.
 
 %prep
 %setup -q
-%patch0 -p1
+%apply_patches
 
 
 %build
