@@ -11,14 +11,20 @@ BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
 BuildRequires:  intltool
 BuildRequires:  pkgconfig
+BuildRequires:	pkgconfig(ibus-1.0)
+BuildRequires:	pkgconfig(xkbfile)
+BuildRequires:	pkgconfig(xkeyboard-config)
 BuildRequires:  pkgconfig(dbus-glib-1)
 BuildRequires:  pkgconfig(glib-2.0) >= 2.44.0
 BuildRequires:  pkgconfig(gtk+-3.0) >= 3.15.2
 BuildRequires:  pkgconfig(gnome-desktop-3.0) >= 3.12.0
+BuildRequires:	pkgconfig(gnome-bluetooth-1.0)
 BuildRequires:  pkgconfig(gsettings-desktop-schemas)
 BuildRequires:  pkgconfig(libcanberra-gtk3)
 BuildRequires:  pkgconfig(libpulse)
 BuildRequires:  pkgconfig(libpulse-mainloop-glib)
+BuildRequires:	pkgconfig(polkit-agent-1)
+BuildRequires:	pkgconfig(polkit-gobject-1)
 BuildRequires:  pkgconfig(upower-glib) >= 0.99.0
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xext)
@@ -69,6 +75,8 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %files -f %{name}.lang
 %doc COPYING NEWS
 %{_sysconfdir}/xdg/menus/gnome-flashback-applications.menu
+%{_sysconfdir}/xdg/autostart/gnome-flashback-nm-applet.desktop
+%{_sysconfdir}/xdg/autostart/gnome-flashback-screensaver.desktop
 %{_bindir}/gnome-flashback
 %{_libexecdir}/gnome-flashback-compiz
 %{_libexecdir}/gnome-flashback-metacity
@@ -79,3 +87,6 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_datadir}/gnome-session/sessions/gnome-flashback-metacity.session
 %{_datadir}/xsessions/gnome-flashback-compiz.desktop
 %{_datadir}/xsessions/gnome-flashback-metacity.desktop
+%{_datadir}/desktop-directories/X-GNOME-Flashback-Settings-System.directory
+%{_datadir}/desktop-directories/X-GNOME-Flashback-Settings.directory
+
