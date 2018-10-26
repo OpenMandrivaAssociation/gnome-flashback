@@ -1,5 +1,5 @@
 Name:           gnome-flashback
-Version:        3.18.1
+Version:        3.30.0
 Release:        1
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
@@ -89,4 +89,6 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_datadir}/xsessions/gnome-flashback-metacity.desktop
 %{_datadir}/desktop-directories/X-GNOME-Flashback-Settings-System.directory
 %{_datadir}/desktop-directories/X-GNOME-Flashback-Settings.directory
+%{_datadir}/glib-2.0/schemas/00_gnome-flashback.gschema.override
+%{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback*
 
