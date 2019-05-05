@@ -1,5 +1,2 @@
-removed_sources:
-  gnome-flashback-3.16.1.tar.xz: 013324848f0c1c9e5b5113bc087bf84d48949c7f
-  gnome-flashback-3.18.1.tar.xz: c38e6e97f41fa97844df7f95e246dfa5f8b2ad06
 sources:
-  gnome-flashback-3.30.0.tar.xz: 6cbb5566c822a8b5f08feb7805e4d39a9164f08a
+  gnome-flashback-3.32.0.tar.xz: 2b1c89601c3bb1dc18054b5d7ffd65152a0de8a6
