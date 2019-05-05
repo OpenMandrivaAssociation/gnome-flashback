@@ -1,6 +1,6 @@
 Name:           gnome-flashback
-Version:        3.30.0
-Release:        2
+Version:        3.32.0
+Release:        1
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
 License:        GPLv3+
@@ -53,11 +53,11 @@ by integrating recent changes of the GNOME libraries.
 
 %build
 %configure
-%make
+%make_build
 
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang %{name}
 
