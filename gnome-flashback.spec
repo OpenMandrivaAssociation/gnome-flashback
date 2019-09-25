@@ -92,3 +92,8 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_datadir}/glib-2.0/schemas/00_gnome-flashback.gschema.override
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback*
 
+%{_userunitdir}/gnome-flashback.service
+%{_userunitdir}/gnome-flashback.target
+%{_userunitdir}/gnome-session-x11@gnome-flashback-compiz.target
+%{_userunitdir}/gnome-session-x11@gnome-flashback-metacity.target
+
