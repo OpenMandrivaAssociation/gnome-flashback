@@ -48,7 +48,7 @@ by integrating recent changes of the GNOME libraries.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 
 %build
