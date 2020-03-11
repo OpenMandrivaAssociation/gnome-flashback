@@ -1,5 +1,5 @@
 Name:           gnome-flashback
-Version:        3.34.2
+Version:        3.35.2
 Release:        1
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
