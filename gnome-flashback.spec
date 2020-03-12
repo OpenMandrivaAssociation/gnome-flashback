@@ -28,6 +28,8 @@ BuildRequires:	pkgconfig(polkit-gobject-1)
 BuildRequires:  pkgconfig(upower-glib) >= 0.99.0
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xext)
+BuildRequires:  pkgconfig(gdm)
+BuildRequires:  pkgconfig(xxf86vm)
 Requires:       gnome-panel
 Requires:       gnome-applets
 Requires:       metacity
