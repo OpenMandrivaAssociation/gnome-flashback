@@ -80,16 +80,16 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %doc COPYING NEWS
 %{_sysconfdir}/xdg/menus/gnome-flashback-applications.menu
 %{_sysconfdir}/xdg/autostart/gnome-flashback-nm-applet.desktop
-%{_sysconfdir}/xdg/autostart/gnome-flashback-screensaver.desktop
+#{_sysconfdir}/xdg/autostart/gnome-flashback-screensaver.desktop
 %{_bindir}/gnome-flashback
-%{_libexecdir}/gnome-flashback-compiz
+#{_libexecdir}/gnome-flashback-compiz
 %{_libexecdir}/gnome-flashback-metacity
 #{_datadir}/applications/gnome-flashback-init.desktop
 %{_datadir}/applications/gnome-flashback.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback.gschema.xml
-%{_datadir}/gnome-session/sessions/gnome-flashback-compiz.session
+#{_datadir}/gnome-session/sessions/gnome-flashback-compiz.session
 %{_datadir}/gnome-session/sessions/gnome-flashback-metacity.session
-%{_datadir}/xsessions/gnome-flashback-compiz.desktop
+#{_datadir}/xsessions/gnome-flashback-compiz.desktop
 %{_datadir}/xsessions/gnome-flashback-metacity.desktop
 %{_datadir}/desktop-directories/X-GNOME-Flashback-Settings-System.directory
 %{_datadir}/desktop-directories/X-GNOME-Flashback-Settings.directory
