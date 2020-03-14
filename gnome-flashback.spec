@@ -10,6 +10,7 @@ Source0:        http://download.gnome.org/sources/%{name}/3.16/%{name}-%{version
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
 BuildRequires:  intltool
+BuildRequires:  pam-devel
 BuildRequires:  pkgconfig
 BuildRequires:	pkgconfig(ibus-1.0)
 BuildRequires:	pkgconfig(xkbfile)
