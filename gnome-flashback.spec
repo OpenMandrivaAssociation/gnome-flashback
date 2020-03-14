@@ -1,5 +1,5 @@
 Name:           gnome-flashback
-Version:        3.34.2
+Version:        3.35.2
 Release:        1
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
@@ -10,6 +10,7 @@ Source0:        http://download.gnome.org/sources/%{name}/3.16/%{name}-%{version
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
 BuildRequires:  intltool
+BuildRequires:  pam-devel
 BuildRequires:  pkgconfig
 BuildRequires:	pkgconfig(ibus-1.0)
 BuildRequires:	pkgconfig(xkbfile)
@@ -19,6 +20,7 @@ BuildRequires:  pkgconfig(glib-2.0) >= 2.44.0
 BuildRequires:  pkgconfig(gtk+-3.0) >= 3.15.2
 BuildRequires:  pkgconfig(gnome-desktop-3.0) >= 3.12.0
 BuildRequires:	pkgconfig(gnome-bluetooth-1.0)
+BuildRequires:  pkgconfig(libpanel-applet)
 BuildRequires:  pkgconfig(gsettings-desktop-schemas)
 BuildRequires:  pkgconfig(libcanberra-gtk3)
 BuildRequires:  pkgconfig(libpulse)
@@ -28,6 +30,8 @@ BuildRequires:	pkgconfig(polkit-gobject-1)
 BuildRequires:  pkgconfig(upower-glib) >= 0.99.0
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xext)
+BuildRequires:  pkgconfig(gdm)
+BuildRequires:  pkgconfig(xxf86vm)
 Requires:       gnome-panel
 Requires:       gnome-applets
 Requires:       metacity
@@ -76,22 +80,23 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %doc COPYING NEWS
 %{_sysconfdir}/xdg/menus/gnome-flashback-applications.menu
 %{_sysconfdir}/xdg/autostart/gnome-flashback-nm-applet.desktop
-%{_sysconfdir}/xdg/autostart/gnome-flashback-screensaver.desktop
+#{_sysconfdir}/xdg/autostart/gnome-flashback-screensaver.desktop
 %{_bindir}/gnome-flashback
-%{_libexecdir}/gnome-flashback-compiz
+%{_libdir}gnome-panel/modules/system_indicators.so
+#{_libexecdir}/gnome-flashback-compiz
 %{_libexecdir}/gnome-flashback-metacity
 #{_datadir}/applications/gnome-flashback-init.desktop
 %{_datadir}/applications/gnome-flashback.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback.gschema.xml
-%{_datadir}/gnome-session/sessions/gnome-flashback-compiz.session
+#{_datadir}/gnome-session/sessions/gnome-flashback-compiz.session
 %{_datadir}/gnome-session/sessions/gnome-flashback-metacity.session
-%{_datadir}/xsessions/gnome-flashback-compiz.desktop
+#{_datadir}/xsessions/gnome-flashback-compiz.desktop
 %{_datadir}/xsessions/gnome-flashback-metacity.desktop
 %{_datadir}/desktop-directories/X-GNOME-Flashback-Settings-System.directory
 %{_datadir}/desktop-directories/X-GNOME-Flashback-Settings.directory
 %{_datadir}/glib-2.0/schemas/00_gnome-flashback.gschema.override
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback*
-
+%{_datadir}/gnome-panel/layouts/gnome-flashback.layout
 %{_userunitdir}/gnome-flashback.service
 %{_userunitdir}/gnome-flashback.target
 %{_userunitdir}/gnome-session-x11@gnome-flashback-compiz.target
