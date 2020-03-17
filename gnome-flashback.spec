@@ -1,11 +1,11 @@
 Name:           gnome-flashback
-Version:        3.35.2
+Version:        3.36.0
 Release:        1
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
-Source0:        http://download.gnome.org/sources/%{name}/3.16/%{name}-%{version}.tar.xz
+Source0:        http://download.gnome.org/sources/%{name}/3.36/%{name}-%{version}.tar.xz
 
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
@@ -101,4 +101,3 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_userunitdir}/gnome-flashback.target
 %{_userunitdir}/gnome-session-x11@gnome-flashback-compiz.target
 %{_userunitdir}/gnome-session-x11@gnome-flashback-metacity.target
-
