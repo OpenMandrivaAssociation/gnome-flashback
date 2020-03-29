@@ -1,11 +1,14 @@
 Name:           gnome-flashback
 Version:        3.36.0
-Release:        1
+Release:        2
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
 Source0:        http://download.gnome.org/sources/%{name}/3.36/%{name}-%{version}.tar.xz
+# Memory leak in new 3.36 version
+# https://gitlab.gnome.org/GNOME/gnome-panel/-/issues/21
+Patch0:         memory-leak-in-new-3.36-version.patch
 
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
@@ -49,32 +52,26 @@ series sessions. The differences to the MATE project is that GNOME
 Flashback uses Gtk+3 and tries to follow the current GNOME development
 by integrating recent changes of the GNOME libraries.
 
-
 %prep
 %setup -q
 %autopatch -p1
 
-
 %build
 %configure
 %make_build
-
 
 %install
 %make_install
 
 %find_lang %{name}
 
-
 %postun
 if [ $1 -eq 0 ] ; then
     glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 fi
 
-
 %posttrans
 glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
-
 
 %files -f %{name}.lang
 %doc COPYING NEWS
