@@ -6,9 +6,6 @@ Group:		Graphical desktop/GNOME
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
 Source0:        http://download.gnome.org/sources/%{name}/3.36/%{name}-%{version}.tar.xz
-# Memory leak in new 3.36 version
-# https://gitlab.gnome.org/GNOME/gnome-panel/-/issues/21
-Patch0:         memory-leak-in-new-3.36-version.patch
 
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
