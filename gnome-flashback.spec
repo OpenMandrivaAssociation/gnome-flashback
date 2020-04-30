@@ -75,10 +75,12 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_sysconfdir}/xdg/menus/gnome-flashback-applications.menu
 %{_sysconfdir}/xdg/autostart/gnome-flashback-nm-applet.desktop
 #{_sysconfdir}/xdg/autostart/gnome-flashback-screensaver.desktop
+%{_sysconfdir}/xdg/autostart/gnome-flashback-clipboard.desktop
 %{_bindir}/gnome-flashback
 %{_libdir}/gnome-panel/modules/system_indicators.so
 #{_libexecdir}/gnome-flashback-compiz
 %{_libexecdir}/gnome-flashback-metacity
+%{_libexecdir}/gnome-flashback-clipboard
 #{_datadir}/applications/gnome-flashback-init.desktop
 %{_datadir}/applications/gnome-flashback.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback.gschema.xml
