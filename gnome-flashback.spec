@@ -97,3 +97,4 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_userunitdir}/gnome-flashback.target
 #{_userunitdir}/gnome-session-x11@gnome-flashback-compiz.target
 #{_userunitdir}/gnome-session-x11@gnome-flashback-metacity.target
+%{_userunitdir}/gnome-session@gnome-flashback-metacity.target.d/session.conf
