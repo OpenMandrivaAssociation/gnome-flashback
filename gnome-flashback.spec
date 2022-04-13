@@ -19,7 +19,7 @@ BuildRequires:  pkgconfig(dbus-glib-1)
 BuildRequires:  pkgconfig(glib-2.0) >= 2.44.0
 BuildRequires:  pkgconfig(gtk+-3.0) >= 3.15.2
 BuildRequires:  pkgconfig(gnome-desktop-3.0) >= 3.12.0
-BuildRequires:	pkgconfig(gnome-bluetooth-1.0)
+BuildRequires:	pkgconfig(gnome-bluetooth-3.0)
 BuildRequires:	pkgconfig(libgnome-panel)
 BuildRequires:  pkgconfig(gsettings-desktop-schemas)
 BuildRequires:  pkgconfig(libcanberra-gtk3)
