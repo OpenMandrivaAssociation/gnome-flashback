@@ -83,7 +83,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_libexecdir}/gnome-flashback-clipboard
 #{_datadir}/applications/gnome-flashback-init.desktop
 %{_datadir}/applications/gnome-flashback.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback.gschema.xml
+#{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback.gschema.xml
 #{_datadir}/gnome-session/sessions/gnome-flashback-compiz.session
 %{_datadir}/gnome-session/sessions/gnome-flashback-metacity.session
 #{_datadir}/xsessions/gnome-flashback-compiz.desktop
