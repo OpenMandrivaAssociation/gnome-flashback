@@ -81,6 +81,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_libexecdir}/gnome-flashback-metacity
 %{_libexecdir}/gnome-flashback-clipboard
 %{_libexecdir}/gnome-flashback-media-keys
+%{_libexecdir}/gnome-flashback-idle-monitor
 %{_datadir}/applications/gnome-flashback.desktop
 %{_datadir}/gnome-session/sessions/gnome-flashback-metacity.session
 %{_datadir}/xsessions/gnome-flashback-metacity.desktop
