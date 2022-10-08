@@ -76,6 +76,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_sysconfdir}/xdg/autostart/gnome-flashback-nm-applet.desktop
 %{_sysconfdir}/xdg/autostart/gnome-flashback-clipboard.desktop
 %{_sysconfdir}/xdg/autostart/gnome-flashback-media-keys.desktop
+%{_sysconfdir}/xdg/autostart/gnome-flashback-idle-monitor.desktop
 %{_bindir}/gnome-flashback
 %{_libdir}/gnome-panel/modules/system_indicators.so
 %{_libexecdir}/gnome-flashback-metacity
