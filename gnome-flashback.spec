@@ -1,11 +1,11 @@
 Name:           gnome-flashback
-Version:        3.46.0
-Release:        3
+Version:        3.49.1
+Release:        1
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
-Source0:        http://download.gnome.org/sources/gnome-flashback/3.46/%{name}-%{version}.tar.xz
+Source0:        https://download.gnome.org/sources/gnome-flashback/3.46/%{name}-%{version}.tar.xz
 
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
@@ -71,18 +71,20 @@ fi
 glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 
 %files -f %{name}.lang
-%doc COPYING NEWS
+%doc COPYING NEWS README.md
 %{_sysconfdir}/xdg/menus/gnome-flashback-applications.menu
 %{_sysconfdir}/xdg/autostart/gnome-flashback-nm-applet.desktop
 %{_sysconfdir}/xdg/autostart/gnome-flashback-clipboard.desktop
 %{_sysconfdir}/xdg/autostart/gnome-flashback-media-keys.desktop
 %{_sysconfdir}/xdg/autostart/gnome-flashback-idle-monitor.desktop
+%{_sysconfdir}/xdg/autostart/%{name}-polkit.desktop
 %{_bindir}/gnome-flashback
 %{_libdir}/gnome-panel/modules/system_indicators.so
 %{_libexecdir}/gnome-flashback-metacity
 %{_libexecdir}/gnome-flashback-clipboard
 %{_libexecdir}/gnome-flashback-media-keys
 %{_libexecdir}/gnome-flashback-idle-monitor
+%{_libexecdir}/%{name}-polkit
 %{_datadir}/applications/gnome-flashback.desktop
 %{_datadir}/gnome-session/sessions/gnome-flashback-metacity.session
 %{_datadir}/xsessions/gnome-flashback-metacity.desktop
