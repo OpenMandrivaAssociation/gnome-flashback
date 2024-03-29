@@ -78,6 +78,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_sysconfdir}/xdg/autostart/gnome-flashback-media-keys.desktop
 %{_sysconfdir}/xdg/autostart/gnome-flashback-idle-monitor.desktop
 %{_sysconfdir}/xdg/autostart/%{name}-polkit.desktop
+%{_sysconfdir}/xdg/autostart/gnome-flashback-geoclue-demo-agent.desktop
 %{_bindir}/gnome-flashback
 %{_libdir}/gnome-panel/modules/system_indicators.so
 %{_libexecdir}/gnome-flashback-metacity
@@ -94,6 +95,7 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-flashback*
 %{_datadir}/gnome-panel/layouts/gnome-flashback.layout
 %{_datadir}/gnome-control-center/keybindings/50-gnome-flashback-screenshots.xml
+%{_datadir}/desktop-directories/X-GNOME-Flashback-Science.directory
 %{_userunitdir}/gnome-flashback.service
 %{_userunitdir}/gnome-flashback.target
 %{_userunitdir}/gnome-session@gnome-flashback-metacity.target.d/session.conf
