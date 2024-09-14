@@ -1,11 +1,11 @@
 Name:           gnome-flashback
 Version:        3.52.1
-Release:        1
+Release:        2
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
-Source0:        https://download.gnome.org/sources/gnome-flashback/3.50/%{name}-%{version}.tar.xz
+Source0:        https://download.gnome.org/sources/gnome-flashback/3.52/%{name}-%{version}.tar.xz
 
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
