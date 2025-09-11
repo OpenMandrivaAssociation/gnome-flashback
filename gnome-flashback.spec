@@ -1,11 +1,11 @@
 Name:           gnome-flashback
 Version:        3.56.0
-Release:        1
+Release:        2
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
 License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
-Source0:        https://download.gnome.org/sources/gnome-flashback/3.52/%{name}-%{version}.tar.xz
+Source0:        https://download.gnome.org/sources/gnome-flashback/3.56/%{name}-%{version}.tar.xz
 
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
@@ -50,8 +50,7 @@ Flashback uses Gtk+3 and tries to follow the current GNOME development
 by integrating recent changes of the GNOME libraries.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 %configure
