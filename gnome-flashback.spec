@@ -38,7 +38,6 @@ Requires:       metacity
 Requires:       notification-daemon
 Requires:       upower
 Requires:       gnome-keyring
-Requires:       gnome-screensaver
 Requires:       gnome-settings-daemon
 Requires:       gnome-session
 
@@ -98,3 +97,9 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %{_userunitdir}/gnome-flashback.service
 %{_userunitdir}/gnome-flashback.target
 %{_userunitdir}/gnome-session@gnome-flashback-metacity.target.d/session.conf
+%{_userunitdir}/gnome-flashback-clipboard.service
+%{_userunitdir}/gnome-flashback-idle-monitor.service
+%{_userunitdir}/gnome-flashback-media-keys.service
+%{_userunitdir}/gnome-flashback-polkit.service
+%{_userunitdir}/gnome-session-x11@gnome-flashback-metacity.target
+%{_userunitdir}/gnome-session@gnome-flashback-metacity.target.d/metacity.conf
