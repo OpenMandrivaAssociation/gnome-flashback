@@ -73,10 +73,10 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %doc COPYING NEWS README.md
 %{_sysconfdir}/xdg/menus/gnome-flashback-applications.menu
 %{_sysconfdir}/xdg/autostart/gnome-flashback-nm-applet.desktop
-%{_sysconfdir}/xdg/autostart/gnome-flashback-clipboard.desktop
-%{_sysconfdir}/xdg/autostart/gnome-flashback-media-keys.desktop
-%{_sysconfdir}/xdg/autostart/gnome-flashback-idle-monitor.desktop
-%{_sysconfdir}/xdg/autostart/%{name}-polkit.desktop
+#{_sysconfdir}/xdg/autostart/gnome-flashback-clipboard.desktop
+#{_sysconfdir}/xdg/autostart/gnome-flashback-media-keys.desktop
+#{_sysconfdir}/xdg/autostart/gnome-flashback-idle-monitor.desktop
+#{_sysconfdir}/xdg/autostart/%{name}-polkit.desktop
 %{_sysconfdir}/xdg/autostart/gnome-flashback-geoclue-demo-agent.desktop
 %{_bindir}/gnome-flashback
 %{_libdir}/gnome-panel/modules/system_indicators.so
