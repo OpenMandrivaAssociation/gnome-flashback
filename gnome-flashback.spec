@@ -7,6 +7,11 @@ License:        GPLv3+
 URL:            https://wiki.gnome.org/Projects/GnomeFlashback
 Source0:        https://download.gnome.org/sources/gnome-flashback/3.56/%{name}-%{version}.tar.xz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  gnome-common
 BuildRequires:  gettext-devel
 BuildRequires:  intltool
