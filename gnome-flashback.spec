@@ -1,6 +1,6 @@
 Name:           gnome-flashback
 Version:        3.58.0
-Release:        3
+Release:        4
 Summary:        Classic GNOME session
 Group:		Graphical desktop/GNOME
 License:        GPLv3+
